@@ -1,0 +1,39 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    
+    "modules-left": ["clock"],
+    "modules-center": [],
+    "modules-right": ["tray", "pulseaudio"],
+    
+    "spacing": 5,
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "margin-left": 10,
+    "margin-right": 10,
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d/%m/%Y}",
+        "actions": {
+            "on-click-right": "mode"
+        }
+    },
+
+    "pulseaudio": {
+        "format": "{icon}{volume}%",
+        "format-muted": "------",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 2 
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 10
+    }
+}

@@ -1,0 +1,40 @@
+/* Estilos para Waybar */
+
+/* Barra principal */
+#waybar {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    /*border: 1px solid rgba(255, 255, 255, 0.1);*/
+}
+
+/* Módulos individuales */
+.modules-left,
+.modules-center,
+.modules-right {
+    border-radius: 10px;
+}
+
+/* Módulos específicos */
+#clock,
+#pulseaudio,
+#tray {
+    /*background: rgba(255, 255, 255, 0.1);*/
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 0 2px;
+}
+
+/* Hover effects */
+#clock:hover,
+#pulseaudio:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Tray icons */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
