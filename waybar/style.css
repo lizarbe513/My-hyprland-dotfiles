@@ -3,15 +3,16 @@
 /* Barra principal */
 #waybar {
     background: rgba(0, 0, 0, 0.9);
-    border-radius: 15px;
+    border-radius: 0px;
     /*border: 1px solid rgba(255, 255, 255, 0.1);*/
+    font-size: 11px;
 }
 
 /* Módulos individuales */
 .modules-left,
 .modules-center,
 .modules-right {
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 /* Módulos específicos */
@@ -19,7 +20,7 @@
 #pulseaudio,
 #tray {
     /*background: rgba(255, 255, 255, 0.1);*/
-    border-radius: 10px;
+    border-radius: 0px;
     padding: 0 10px;
     margin: 0 2px;
 }

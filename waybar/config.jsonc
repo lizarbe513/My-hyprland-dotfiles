@@ -1,17 +1,17 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 10,
     
-    "modules-left": ["clock"],
+    "modules-left": ["clock", "idle_inhibitor"],
     "modules-center": [],
     "modules-right": ["tray", "pulseaudio"],
     
-    "spacing": 5,
-    "margin-top": 8,
+    "spacing": 0,
+    "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 10,
-    "margin-right": 10,
+    "margin-left": 0,
+    "margin-right": 0,
 
     "clock": {
         "format": "{:%I:%M %p}",
@@ -35,5 +35,13 @@
     "tray": {
         "icon-size": 16,
         "spacing": 10
-    }
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "(o)",
+            "deactivated": "---"
+        }
+    },
 }
